@@ -1,0 +1,2 @@
+free -m | awk 'NR==2{printf "MEM:%.2f%% | ", $3*100/$2 }'
+top -bn1 | grep load | awk '{printf "CPU:%.2f%%", $(NF-2)}'

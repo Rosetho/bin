@@ -1,0 +1,3 @@
+#!/bin/sh
+var=$(cat /sys/class/net/wlp2s0/operstate)
+echo "$var"

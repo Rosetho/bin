@@ -1,0 +1,14 @@
+#!/bin/sh
+
+
+if [ -z  "$1"  ];then
+	echo "provide a file or a url (-u)"
+elif [ "$1" == "-u" ]; then
+	youtube-dl --no-playlist -x --audio-format mp3 $2
+else
+	for line in $(cat $1)
+	do
+		echo $line
+		youtube-dl --no-playlist -x --audio-format mp3 $line
+	done
+fi
