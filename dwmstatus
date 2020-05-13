@@ -1,5 +1,5 @@
 while [ true ]
 do
-       	xsetroot -name "$(cpumem) | $(vol) | $(batt) | $(date +%a\-%b\-%-e\-%Y\-%-I:%M%P)"
-   	sleep 25s
+       	xsetroot -name "| $(vol) | $(batt) | $(date +%a\-%b\-%-e\-%Y\-%-I:%M%P)"
+   	sleep 1m
 done 

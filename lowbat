@@ -1,0 +1,4 @@
+battery="/sys/class/power_supply/BAT0"
+capacity=$(cat "$battery"/capacity)
+status=$(cat "$battery"/status)
+[ "$status" == "Discharging" ] && [ $capacity -le 15 ] && abeep 
