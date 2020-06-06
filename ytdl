@@ -2,7 +2,7 @@
 
 
 if [ -z  "$1"  ];then
-	echo "provide a file or a url (-u)"
+	echo "provide a file of urls or a single url (-u)"
 elif [ "$1" == "-u" ]; then
 	youtube-dl --no-playlist -x --audio-format mp3 $2
 else

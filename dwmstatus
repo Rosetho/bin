@@ -1,5 +1,5 @@
 while [ true ]
 do
-       	xsetroot -name "$(netup) | $(vol) | $(batt) | $(date +%a\-%b\-%-e\-%Y\-%-I:%M%P)"
+       	xsetroot -name "$(netup) | $(volctl) | $(batt) | $(date +%a\-%b\-%-e\-%Y\-%-I:%M%P)"
    	sleep 1m
 done 
