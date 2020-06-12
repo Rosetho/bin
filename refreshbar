@@ -1,0 +1,3 @@
+#kill dwmstatus sleep
+pkill sleep --ns $(ps f|awk '$2 ~ /^tty/ && /sleep 1m/ {print $1}')
+

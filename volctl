@@ -7,9 +7,9 @@ then amixer sset Master 5%-
 elif [ $1 == "mute" ]
 then amixer sset Master toggle
 elif [ $1 == "bup" ] 
-then amixer sset Master 10%+ unmute
+then amixer sset Master 20%+ unmute
 elif [ $1 == "bdown" ]
-then amixer sset Master 10%-
+then amixer sset Master 20%-
 
 
 fi
