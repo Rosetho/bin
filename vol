@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 volstat="$(amixer get Master)"
