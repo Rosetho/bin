@@ -1,15 +1,14 @@
 #!/bin/bash
-if [ -z "$1" ]; then vol 
-elif [ $1 == "up" ] 
-then amixer sset Master 5%+ unmute
-elif [ $1 == "down" ]
-then amixer sset Master 5%-
-elif [ $1 == "mute" ]
-then amixer sset Master toggle
-elif [ $1 == "bup" ] 
-then amixer sset Master 20%+ unmute
-elif [ $1 == "bdown" ]
-then amixer sset Master 20%-
-
-
+if test -z "$1" ; then 
+vol 
+elif [ $1 == "up" ]; then 
+amixer sset Master 5%+ unmute
+elif [ $1 == "down" ]; then 
+amixer sset Master 5%-
+elif [ $1 == "mute" ]; then 
+amixer sset Master toggle
+elif [ $1 == "bup" ]; then 
+amixer sset Master 20%+ unmute
+elif [ $1 == "bdown" ]; then 
+amixer sset Master 20%-
 fi
