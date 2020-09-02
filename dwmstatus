@@ -4,6 +4,7 @@ export SEP2=""
 export IDENTIFIER="unicode"
 while [ true ]
 do
-       	xsetroot -name "$(netup) | $(volctl) | $(batt) | $(weather) | $(date +%a\-%m\-%-e\-%Y\-%-I:%M%P)"
-   	sleep 1m
+       	xsetroot -name "$(netup) | $(volctl) | $(batt) | $(date +%a\-%m\-%-e\-%Y\-%-I:%M%P)"
+   	battwarn
+	sleep 1m
 done 
