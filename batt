@@ -6,7 +6,7 @@ do
 	if [ -z $capacity ];then exit 0;fi
 	status=$(sed "s/Discharging/⚡/;s/Not charging/❗/;s/Charging/♻/;s/Unknown/idk/;s/Full//" "$battery"/status)
 	[ "$capacity" -le 30 ] && [ "$status" = "⚡" ] &&  warn="!!!"
-	printf "%s%s%s%%\n" "$status" "$capacity" "$warn"
+	printf "%s%s%s%%|\n" "$status" "$capacity" "$warn"
 	unset warn
 done
 

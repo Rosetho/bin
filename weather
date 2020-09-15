@@ -1,6 +1,9 @@
 #!/bin/sh
 LOCATION=ewr
 OUTPUT="$(curl -s wttr.in/$LOCATION?format=1)"  
+
+if [ $(echo $OUTPUT|awk '{print $1}') == "Unknown" ]; then exit 0;fi
+
 if [ "$IDENTIFIER" = "unicode" ]; then
   printf "%s" "$OUTPUT"
 else
