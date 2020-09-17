@@ -2,7 +2,7 @@
 LOCATION=ewr
 OUTPUT="$(curl -s wttr.in/?format=1)"  
 
-if [ $(echo $OUTPUT|awk '{print $1}') -eq "Unknown" ]; then printf "hey";fi
+#if [ $(echo $OUTPUT|awk '{print $1}') == "Unknown" ]; then printf "hey";fi
 
 if [ "$IDENTIFIER" = "unicode" ]; then
   printf "%s" "$OUTPUT"
