@@ -1,0 +1,6 @@
+echo "Old mirrors"
+cat /etc/pacman.d/mirrorlist
+pacman-mirrorup>/etc/pacman.d/mirrorlist
+echo "New mirrors"
+cat /etc/pacman.d/mirrorlist
+sudo -u tom yay -Sy
